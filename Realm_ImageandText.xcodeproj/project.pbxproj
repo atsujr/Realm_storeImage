@@ -13,6 +13,12 @@
 		3B1B5CF62B2D9999003FF830 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B1B5CF42B2D9999003FF830 /* Main.storyboard */; };
 		3B1B5CF82B2D999B003FF830 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B1B5CF72B2D999B003FF830 /* Assets.xcassets */; };
 		3B1B5CFB2B2D999B003FF830 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B1B5CF92B2D999B003FF830 /* LaunchScreen.storyboard */; };
+		3B1B5D042B2E74E3003FF830 /* TweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1B5D022B2E74E3003FF830 /* TweetTableViewCell.swift */; };
+		3B1B5D052B2E74E3003FF830 /* TweetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B1B5D032B2E74E3003FF830 /* TweetTableViewCell.xib */; };
+		3B1B5D072B2E7E0D003FF830 /* AddTweetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1B5D062B2E7E0D003FF830 /* AddTweetViewController.swift */; };
+		3B1B5D0A2B2E7E61003FF830 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 3B1B5D092B2E7E61003FF830 /* Realm */; };
+		3B1B5D0C2B2E7E61003FF830 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3B1B5D0B2B2E7E61003FF830 /* RealmSwift */; };
+		3B1B5D0E2B2E7F92003FF830 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1B5D0D2B2E7F92003FF830 /* Tweet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,10 @@
 		3B1B5CF72B2D999B003FF830 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B1B5CFA2B2D999B003FF830 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B1B5CFC2B2D999B003FF830 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B1B5D022B2E74E3003FF830 /* TweetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetTableViewCell.swift; sourceTree = "<group>"; };
+		3B1B5D032B2E74E3003FF830 /* TweetTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TweetTableViewCell.xib; sourceTree = "<group>"; };
+		3B1B5D062B2E7E0D003FF830 /* AddTweetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTweetViewController.swift; sourceTree = "<group>"; };
+		3B1B5D0D2B2E7F92003FF830 /* Tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B1B5D0C2B2E7E61003FF830 /* RealmSwift in Frameworks */,
+				3B1B5D0A2B2E7E61003FF830 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +72,10 @@
 				3B1B5CF02B2D9999003FF830 /* SceneDelegate.swift */,
 				3B1B5CF22B2D9999003FF830 /* ViewController.swift */,
 				3B1B5CF42B2D9999003FF830 /* Main.storyboard */,
+				3B1B5D0D2B2E7F92003FF830 /* Tweet.swift */,
+				3B1B5D062B2E7E0D003FF830 /* AddTweetViewController.swift */,
+				3B1B5D022B2E74E3003FF830 /* TweetTableViewCell.swift */,
+				3B1B5D032B2E74E3003FF830 /* TweetTableViewCell.xib */,
 				3B1B5CF72B2D999B003FF830 /* Assets.xcassets */,
 				3B1B5CF92B2D999B003FF830 /* LaunchScreen.storyboard */,
 				3B1B5CFC2B2D999B003FF830 /* Info.plist */,
@@ -83,6 +99,10 @@
 			dependencies = (
 			);
 			name = Realm_ImageandText;
+			packageProductDependencies = (
+				3B1B5D092B2E7E61003FF830 /* Realm */,
+				3B1B5D0B2B2E7E61003FF830 /* RealmSwift */,
+			);
 			productName = Realm_ImageandText;
 			productReference = 3B1B5CEB2B2D9999003FF830 /* Realm_ImageandText.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +131,9 @@
 				Base,
 			);
 			mainGroup = 3B1B5CE22B2D9999003FF830;
+			packageReferences = (
+				3B1B5D082B2E7E61003FF830 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = 3B1B5CEC2B2D9999003FF830 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -128,6 +151,7 @@
 				3B1B5CFB2B2D999B003FF830 /* LaunchScreen.storyboard in Resources */,
 				3B1B5CF82B2D999B003FF830 /* Assets.xcassets in Resources */,
 				3B1B5CF62B2D9999003FF830 /* Main.storyboard in Resources */,
+				3B1B5D052B2E74E3003FF830 /* TweetTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,7 +164,10 @@
 			files = (
 				3B1B5CF32B2D9999003FF830 /* ViewController.swift in Sources */,
 				3B1B5CEF2B2D9999003FF830 /* AppDelegate.swift in Sources */,
+				3B1B5D072B2E7E0D003FF830 /* AddTweetViewController.swift in Sources */,
+				3B1B5D0E2B2E7F92003FF830 /* Tweet.swift in Sources */,
 				3B1B5CF12B2D9999003FF830 /* SceneDelegate.swift in Sources */,
+				3B1B5D042B2E74E3003FF830 /* TweetTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +388,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3B1B5D082B2E7E61003FF830 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3B1B5D092B2E7E61003FF830 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3B1B5D082B2E7E61003FF830 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		3B1B5D0B2B2E7E61003FF830 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3B1B5D082B2E7E61003FF830 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3B1B5CE32B2D9999003FF830 /* Project object */;
 }
